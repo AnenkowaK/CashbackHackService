@@ -13,6 +13,11 @@ public class CashbackHackServiceTest {
     }
 
     @Test
+    public void shouldReturn0() {
+        assertEquals(service.remain(1000), 0);
+    }
+
+    @Test
     public void shouldReturn999() {
         assertEquals(service.remain(1001), 999);
     }
